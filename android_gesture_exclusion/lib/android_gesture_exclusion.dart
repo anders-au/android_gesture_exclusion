@@ -165,12 +165,12 @@ class _AndroidGestureExclusionContainerState extends State<AndroidGestureExclusi
 
 class _GestureExclusion extends SingleChildRenderObjectWidget {
   const _GestureExclusion({
-    Key? key,
+    super.key,
     required this.verticalExclusionMargin,
     required this.horizontalExclusionMargin,
     required this.coverDeviceEdges,
-    required Widget child,
-  }) : super(key: key, child: child);
+    required Widget super.child,
+  });
 
   final double verticalExclusionMargin;
   final double horizontalExclusionMargin;
